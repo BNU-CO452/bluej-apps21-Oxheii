@@ -1,0 +1,36 @@
+Course.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CTG1:  Batchelors Computing
+
+ Module Code: CO452: Programming Concepts
+
+Course BucksComputing = new Course("BT1CTG1", "BSc Computing");
+Module BucksWebDev = new Module("CO458", "Web Development");
+BucksWebDev.print();
+ Module Code: CO458: Web Development
+
+BucksWebDev.getCredit()
+    returned int 0
+BucksWebDev.setCredit(15);
+BucksWebDev.print();
+ Module Code: CO458: Web Development
+
+BucksWebDev.getCredit()
+    returned int 15
+Module module1 = new Module("GI", "gsgsd");
+module1.getCode()
+    returned String "GI"
+module1.getCredit()
+    returned int 0
+module1.setCredit(12);
+Course BucksWebDev = new Course("BT1CWD1", " BSc Computing & Web");
+Module BucksProgramming = new Module("CO452", "Programming Concepts");
+BucksWebDev.addModule(BucksProgramming);
+BucksProgramming.setCredit(15);
+BucksProgramming.print();
+ Module Code: CO452: Programming Concepts
+ Module Credit: 15
+
