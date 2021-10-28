@@ -1,0 +1,12 @@
+RichardOchei.printCourse();
+ Student ID: 22136351, Richard Ochei
+
+ Course BT1CWD1: BSc Computing & Web
+
+Module ProgrammingConcepts = new Module("CO452", "Programming Concepts");
+ComputingWedDev.addModule(ProgrammingConcepts);
+ModuleMark RichardCO452Mark = new ModuleMark(ProgrammingConcepts);
+RichardCO452Mark.getValue()
+    returned int 0
+RichardCO452Mark.setMark(64);
+RichardOchei.addMark(RichardCO452Mark);
