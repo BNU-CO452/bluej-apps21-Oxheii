@@ -43,6 +43,17 @@ public class Course
      */
     public void createModules()
     {
+        Module moduleCO452 = new Module("CO452","Programming Concepts");
+        addModule(moduleCO452);
+        
+        Module moduleCO450 = new Module("CO450","Computer Architectures");
+        addModule(moduleCO450);
+        
+        Module moduleCO454 = new Module("CO454","Digital Technologies and Professional Practice");
+        addModule(moduleCO454);
+        
+        Module moduleCO458 = new Module("CO458","Web Development");
+        addModule(moduleCO458);
 
     }
     
@@ -59,6 +70,27 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
+        Grades grade = Grades.NS;
+        if(mark > Grades.B.getValue())
+        {
+            return Grades.A;
+        }
+        else if(mark >= 60)
+        {
+            return Grades.B;
+        }
+        if(mark <= 50)
+        {
+            return Grades.C;
+        }
+        else if(mark >= 40)
+        {
+            return Grades.D;
+        }
+        else if(mark >= 39)
+        {
+            return Grades.F;
+        }
         return Grades.NS;
     }
     
@@ -89,10 +121,16 @@ public class Course
      */
     public void printModules()
     {
+    System.out.println("   Course Modules");
+    System.out.println("   ---------------");
+    System.out.println();
         for (Module module : modules)
         {
-            module.print();
-            module.printCredit();
+            System.out.print("   " + module.getCode());
+            System.out.println(":  " + module.getTitle());
         }
+        
+        
+        System.out.println();
     }
 }

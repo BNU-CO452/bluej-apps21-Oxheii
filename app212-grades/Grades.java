@@ -1,10 +1,10 @@
 
 /**
- * These are the grades used by BNU to classify 
- * students at the completion of their course
- * Each value is the top percentage mark for that grade
- * @author Derek Peacock and Nicholas Day
- * @version 1.0 01/10/2020
+ * These are the grades used by BNU to categorise 
+ * students at the end of their course 
+ * Each value represents the highest percentage mark for that grade
+ * @author Richard Okon Ochei
+ * @version 1.0 29/10/2021
  */
 public enum Grades
 {
