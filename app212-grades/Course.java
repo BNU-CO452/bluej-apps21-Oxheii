@@ -45,15 +45,12 @@ public class Course
     public void createModules()
     {
         Module moduleCO452 = new Module("CO452","Programming Concepts");
-        addModule(moduleCO452);
-        
         Module moduleCO450 = new Module("CO450","Computer Architectures");
-        addModule(moduleCO450);
-        
         Module moduleCO454 = new Module("CO454","Digital Technologies and Professional Practice");
-        addModule(moduleCO454);
-        
         Module moduleCO458 = new Module("CO458","Web Development");
+        addModule(moduleCO452);
+        addModule(moduleCO450);
+        addModule(moduleCO454);
         addModule(moduleCO458);
 
     }
@@ -128,6 +125,7 @@ public class Course
         for (Module module : modules)
         {
             System.out.print("   " + module.getCode());
+
             System.out.println(":  " + module.getTitle());
         }
         

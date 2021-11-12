@@ -4,7 +4,7 @@ import java.util.*;
  * It contains the student information that is useful in our situation.
  * 
  * @author Richard Ochei    
- * Modified by Richard Ochei
+ * Modified by Richard Okon Ochei
  * @version 28/10/2021
  */
 public class Student
@@ -84,6 +84,14 @@ public class Student
      */
     public void awardTestMarks()
     {
+        int value = 75;
+        for(Module module : course.modules)
+        {
+            ModuleMark mark = new ModuleMark(module);
+            mark.setMark(value);
+            value = value - 10;
+            marks.add(mark);
+        }
         
     }
     
@@ -124,9 +132,7 @@ public class Student
       for(ModuleMark mark: marks)
       {
           System.out.println(mark.getModule().getCode());
-          System.out.print(" :");
           System.out.println(mark.getModule().getTitle());
-          System.out.print("\t");
           System.out.print(mark.getCredit());
           
       }
@@ -136,7 +142,7 @@ public class Student
     {
         System.out.println(" ------------------------------------");
         System.out.println(" App21-02: Exam Board Transcript 2021");
-        System.out.println("        by student name");
+        System.out.println("        by Richard Ochei");
         System.out.println(" ------------------------------------");
         
         printCourse();
@@ -153,6 +159,7 @@ public class Student
         
         System.out.println();
         System.out.println();
+        
         
         if(finalGrade == Grades.NS)
         {
