@@ -19,8 +19,9 @@ public class Course
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("BT1CWD1", "BSc Computing & Web");
     }
+    
     
     /**
      * Constructor for objects of class Course
@@ -71,27 +72,18 @@ public class Course
     public Grades convertToGrade(int mark)
     {
         Grades grade = Grades.NS;
-        if(mark > Grades.B.getValue())
-        {
-            return Grades.A;
-        }
-        else if(mark >= 60)
-        {
-            return Grades.B;
-        }
-        if(mark <= 50)
-        {
-            return Grades.C;
-        }
-        else if(mark >= 40)
-        {
-            return Grades.D;
-        }
-        else if(mark >= 39)
-        {
-            return Grades.F;
-        }
-        return Grades.NS;
+        if(mark>= 0 && mark <= 39)
+           return Grades.F;
+           else if(mark   <= 49)
+           return Grades.D;
+           else if(mark <= 59)
+           return Grades.C;
+           else if(mark   <= 69)
+           return Grades.B;
+           else if(mark   <= 100)
+           return Grades.A;
+           else
+           return Grades.NS;
     }
     
     /**
@@ -100,7 +92,16 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        return Grades.NS;
+        int total = 0;
+        int finalMark = 0;
+        for(ModuleMark mark : marks)
+            {
+                total = total + mark.getValue();
+            }
+        
+           finalMark = total / MAXN_MODULES;
+           finalGrade = convertToGrade(finalMark);
+           return finalGrade;
     }
     
     /**

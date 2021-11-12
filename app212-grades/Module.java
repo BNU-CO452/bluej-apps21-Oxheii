@@ -1,10 +1,10 @@
 /**
- * Modules form part of a course and contain
- * credits that students achieve when they
- * pass the module with a mark of 40+
+ * Modules are part of a course and feature 
+ * credits that students earn when they 
+ * pass the module with a grade of 40 or above.
  *
- * @author Derek Peacock and Nicholas Day
- * @version 1.0 17/07/2021
+ * @author Richard Okon Ochei   
+ * @version 1.0 12/11/2021
  */
 public class Module
 {
@@ -44,7 +44,7 @@ public class Module
     public void print()
     {
         System.out.println();
-        System.out.print(" " + code + ": " + "\t" + title);
+        System.out.print(" " + code + ": " + "\t" + title + "\t" + CREDIT);
     }
     
     /**
