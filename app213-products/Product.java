@@ -22,6 +22,7 @@ public class Product
      * @param name The product's name.
      * @param quantity The product's stock level.
      */
+    
     public Product(int id, String name)
     {
         this.id = id;
