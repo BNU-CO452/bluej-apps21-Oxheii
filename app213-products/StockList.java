@@ -4,11 +4,11 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Richard Ochei 
+ * @version 0.1 18/11/2021
  */
-public class StockList
-{
+   public class StockList
+   {
     // A list of the products.
     private ArrayList<Product> stock;
 
@@ -46,6 +46,11 @@ public class StockList
      */
     public void buyProduct(int productID, int amount)
     {
+        Product product = findProduct(productID);
+        if(product != null)
+        product.increaseQuantity(amount);
+        else
+            System.out.println("Couldn't find product");
     }
     
     /**
@@ -54,20 +59,25 @@ public class StockList
      */
     public Product findProduct(int productID)
     {
+        for(Product product : stock)
+        {
+            if(product.getId() == productID)
+                return product;
+        }
         return null;
     }
     
     
     /**
      * Sell one of the given product.
-     * Show the before and after status of the product.
+     * Show the befor
+    {e and after status of the product.
      * @param id The ID of the product being sold.
      */
     public void sellProduct(int productID)
-    {
-        Product product = findProduct(productID);
+        (Product product = findProduct(productID);
         
-        if(product != null) 
+        if (product != null)
         {
             if(product.getQuantity() > 0)
             {
@@ -86,7 +96,6 @@ public class StockList
         }
     }    
 
-    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -133,7 +142,7 @@ public class StockList
     public void printHeading()
     {
         System.out.println();
-        System.out.println(" Peacock's Stock List");
+        System.out.println(" Ochei's Stock List");
         System.out.println(" ====================");
         System.out.println();
     }
