@@ -74,19 +74,19 @@ public class StockList
      * Check levels of stock
      * If the stock is less than minimum it will buy in more
      */
-    public void reStock()
+    public void lowStocklist()
     {
         printHeading();
-        
         for(Product product: stock)
         { 
             if(product.getQuantity() < 3)
-            {
                 product.increaseQuantity(10);
-                System.out.println(product.getName() + " has been re-stocked");
-            }
-        }
-
+    }
+    System.out.println();
+    for(Product product : stock)
+    {       
+      product.print();
+    }
     }
 
     /**
@@ -140,7 +140,7 @@ public class StockList
         {
             if(product.getQuantity() > 0)
             {
-                product.sellProduct(amount);
+                product.decreaseQuantity(amount);
                 // printout message
                 return String.valueOf(product.getQuantity());
             }
