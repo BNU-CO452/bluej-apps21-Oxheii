@@ -1,0 +1,75 @@
+ SonyList.print();
+
+ Ochei's Stock
+ ====================
+
+1: Playstation stock level: 12
+2: Playstation 2 stock level: 30
+3: Playstation 3 stock level: 20
+4: Playstation 4 stock level: 40
+5: Playstation 5 stock level: 20
+6: PS Portable stock level: 20
+7: PS Vita stock level: 97
+8: PS Virtual Reality stock level: 20
+9: PS controller stock level: 29
+10: Sony TV stock level: 20
+
+SonyList.buyProduct(1, 20);
+SonyList.buyProduct(2);
+1: Playstation stock level: 32
+SonyList.buyProduct(3);
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+SonyList.buyProduct(4);
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+3: Playstation 3 stock level: 21
+SonyList.buyProduct(5);
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+3: Playstation 3 stock level: 21
+4: Playstation 4 stock level: 41
+SonyList.buyProduct(6);
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+3: Playstation 3 stock level: 21
+4: Playstation 4 stock level: 41
+5: Playstation 5 stock level: 21
+SonyList.buyProduct(7);
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+3: Playstation 3 stock level: 21
+4: Playstation 4 stock level: 41
+5: Playstation 5 stock level: 21
+6: PS Portable stock level: 21
+SonyList.buyProduct(8);
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+3: Playstation 3 stock level: 21
+4: Playstation 4 stock level: 41
+5: Playstation 5 stock level: 21
+6: PS Portable stock level: 21
+7: PS Vita stock level: 98
+SonyList.buyProduct(9);
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+3: Playstation 3 stock level: 21
+4: Playstation 4 stock level: 41
+5: Playstation 5 stock level: 21
+6: PS Portable stock level: 21
+7: PS Vita stock level: 98
+8: PS Virtual Reality stock level: 21
+SonyList.buyProduct(10);
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+3: Playstation 3 stock level: 21
+4: Playstation 4 stock level: 41
+5: Playstation 5 stock level: 21
+6: PS Portable stock level: 21
+7: PS Vita stock level: 98
+8: PS Virtual Reality stock level: 21
+9: PS controller stock level: 30
+SonyList.remove(3)
+1: Playstation stock level: 32
+2: Playstation 2 stock level: 31
+    returned Object <object reference>
