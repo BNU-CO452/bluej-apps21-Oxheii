@@ -1,0 +1,31 @@
+ 
+ Ochei's Stock
+ ====================
+
+1: Playstation stock level: 10
+
+
+ Ochei's Stock
+ ====================
+
+1: Playstation stock level: 5
+
+
+ Ochei's Stock
+ ====================
+
+1: Playstation stock level: 15
+
+
+ Ochei's Stock
+ ====================
+
+1: Playstation stock level: 12
+
+
+ Ochei's Stock
+ ====================
+
+1: Playstation stock level: 12
+2: Playstation 2 stock level: 0
+
