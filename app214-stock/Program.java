@@ -1,15 +1,19 @@
 
 /**
- * Write a description of class Program here.
+ * Program class which initialises StockApp
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Richard Ochei
+ * @version 0.1 20/11/2021
  */
 public class Program
 {
     private static StockApp app;
-    
-    public static void main(String[] args)
+
+    /**
+     * This class creates and runs an instance of
+     * the StockApp class
+     */
+    public static void main()
     {
         app = new StockApp();
         app.run();

@@ -1,12 +1,15 @@
+
+
+
 import java.util.*;
 /**
- * Display the StockManager and Product classes. 
- * When the StockManager class is completed, 
- * the demonstration becomes properly functional.
+ * Demonstrate the StockManager and Product classes.
+ * The demonstration becomes properly functional as
+ * the StockManager class is completed.
  * 
  * @author David J. Barnes and Michael Kölling.
- * @modified Richard Okon Ochei
- * @version 18/11/2021
+ * @modified Richard Ochei Okon
+ * @version 0.1 20/11/2021
  */
 public class StockDemo
 {
@@ -15,31 +18,30 @@ public class StockDemo
     // Allows the demo to randomise structured test data
     private Random rand = new Random();
     /**
-     * Set up a StockManager with a few sample products in a list 
-     * with dependents and populate it with the sample products
+     * Create a StockManager and populate it with a few
+     * sample products inside an arraylist with manager dependencies
      */
     public StockDemo(StockManager manager)
     {
         this.manager = manager;
-        manager.addProduct(new Product(12, "PlayStation"));
-        manager.addProduct(new Product(13, "PlayStation 2"));
-        manager.addProduct(new Product(14, "PlayStation 3"));
-        manager.addProduct(new Product(15, "PlayStation 4"));
-        manager.addProduct(new Product(16, "PlayStation 5"));
-        manager.addProduct(new Product(17, "PlayStation Portable"));
-        manager.addProduct(new Product(18, "PlayStation Vita"));
-        manager.addProduct(new Product(19, "PlayStation Virtual Reality"));
-        manager.addProduct(new Product(20, "PlayStation Camera"));
-        manager.addProduct(new Product(21, "PlayStation Dual-Shock Controller"));
-        manager.addProduct(new Product(22, "PlayStation HDD"));
+        manager.addProduct(12, "Playstation");
+        manager.addProduct(13, "PS2");
+        manager.addProduct(14, "PS3");
+        manager.addProduct(15, "PS4");
+        manager.addProduct(16, "PS5");
+        manager.addProduct(17, "Xbox");
+        manager.addProduct(18, "Xbox 360");
+        manager.addProduct(19, "Xbox 1");
+        manager.addProduct(20, "Xbox Series X");
+        manager.addProduct(21, "Gaming PC");
+        manager.addProduct(22, "Nintendo Switch");
     }
     
     /**
      * Provide a very simple demonstration of how a StockManager
-     * might be used. 
-     * Displays the details of one product 
-     * Iterates over all data using a loop and ID 
-     * Gives a range of 1-12 new products
+     * might be used. Details of one product are shown
+     * Uses a for loop and iterates ID to go through all data
+     * Gives a range of 1-12 new stock
      */
     public void demoDelivery()
     {
@@ -52,8 +54,8 @@ public class StockDemo
     /**
      * Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown
-     * Scans for the max quantity of IDs to avoid any overselling in a for loop 
-     * Iterates through all data with ID to go through all data
+     * Uses a for loop and iterates ID to go through all data
+     * Scans for the IDs max quantity avoiding any overselling
      */
     public void demoSell()
     {

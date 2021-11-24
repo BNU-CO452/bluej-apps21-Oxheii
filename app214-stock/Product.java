@@ -3,8 +3,8 @@ import java.util.*;
  * Model some details of a product sold by a company.
  * 
  * @author David J. Barnes and Michael Kölling.
- * @modified Richard Okon Ochei
- * @version 18/11/2021
+ * @modified Richard Ochei Okon
+ * @version 20/11/2021
  */
 public class Product
 {
@@ -22,7 +22,6 @@ public class Product
      * @param name The product's name.
      * @param quantity The product's stock level.
      */
-    
     public Product(int id, String name)
     {
         this.id = id;
@@ -66,7 +65,7 @@ public class Product
      * Restock with the given amount of this product.
      * The current quantity is incremented by the given amount.
      * @param amount The number of new items added to the stock.
-     * This must be greater than zero.
+     *               This must be greater than zero.
      */
     public void increaseQuantity(int amount)
     {
@@ -94,7 +93,7 @@ public class Product
         else 
         {
             System.out.println(
-                "Trying to sell an item that is out of stock: " + name);
+                "Attempt to sell an out of stock item: " + name);
         }
     }
     
